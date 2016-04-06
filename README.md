@@ -1,7 +1,7 @@
 # ios-decal-proj4
 ### **WaterSaver**
 
-##### Authors <br />
+##### Author <br />
 * Jay Iyer
 
 ##### Purpose <br />
