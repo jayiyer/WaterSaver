@@ -31,13 +31,13 @@
 * In another menu, the user can see a graph of water usage percentages for the past week, along with their average amount of water used per week and their average percentage of recommended daily water usage. <br />
 
 ##### Implementation <br />
-* ##### Model <br />
+* Model <br />
   * User.swift <br />
-* ##### View <br />
+* View <br />
   * Main.storyboard <br />
   * CircleGraphView.swift <br />
   * CircleDrawingView.swift <br />
-* ##### Controller <br />
+* Controller <br />
   * ViewController.swift <br />
   * MainViewController.swift <br />
   * GraphsViewController.swift <br />
