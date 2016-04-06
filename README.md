@@ -43,6 +43,6 @@
   * GraphsViewController.swift <br />
   * AboutViewController.swift <br />
   * UsageViewController.swift <br />
-  o	UsageViewCell.swift <br />
-  o	CounterViewController.swift <br />
-  o	TimerViewController.swift <br />
+  * UsageViewCell.swift <br />
+  * CounterViewController.swift <br />
+  * TimerViewController.swift <br />
