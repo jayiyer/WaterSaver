@@ -19,10 +19,9 @@ has consumed <br />
   * Average percentage of recommended daily water usage <br />
 
 ##### Control Flow <br />
-* Users are initially presented with a circular chart showing what percentage 
-of recommended daily water usage they have already consumed <br />
-* There will be a button below this circle to add water usage <br />
-* Once the user taps this button, the user will be presented with a number of 
+* Users are initially presented with a basically-empty page titled "Your Uses 
+of Water," along with a "Stats" button and a "+" button for adding usage. <br />
+* Once the user taps "+" button button, the user will be presented with many 
 scenarios for recording their water usage <br /> 
   * The amount of time spent in a bathtub <br />
   * The number of minutes a dishwasher has been used <br />
@@ -34,10 +33,10 @@ scenarios for recording their water usage <br />
   * The number of minutes a washing machine was in use <br />
 * Once the user records their corresponding water usage, their percentage of 
 recommended daily water usage will increase. The user will be directed back to 
-the updated front-page circular chart. <br />
-* In another menu, the user can see a graph of water usage percentages for the 
-past week, along with their average amount of water used per week and their 
-average percentage of recommended daily water usage. <br />
+the updated front page with a list of water usages. <br />
+* In another menu, the user can see his or her gallons of water used along with
+a progress view that shows what percentage of his or her total daily allowed 
+gallons of water he or she has used. <br />
 
 ##### Implementation <br />
 * Model <br />
