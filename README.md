@@ -21,16 +21,16 @@ has consumed <br />
 ##### Control Flow <br />
 * Users are initially presented with a basically-empty page titled "Your Uses 
 of Water," along with a "Stats" button and a "+" button for adding usage. <br />
-* Once the user taps "+" button button, the user will be presented with many 
+  * Once the user taps "+" button button, the user will be presented with many 
 scenarios for recording their water usage <br /> 
-* The amount of time spent in a bathtub <br />
-* The number of minutes a dishwasher has been used <br />
-* The amount of time a faucet has been running <br />
-* The amount of time a garden hose has been running <br />
-* The amount of time a shower has been used <br />
-* The number of minutes a sprinkler was in use <br />
-* The number of toilet flushes <br />
-* The number of minutes a washing machine was in use <br />
+  * The amount of time spent in a bathtub <br />
+  * The number of minutes a dishwasher has been used <br />
+  * The amount of time a faucet has been running <br />
+  * The amount of time a garden hose has been running <br />
+  * The amount of time a shower has been used <br />
+  * The number of minutes a sprinkler was in use <br />
+  * The number of toilet flushes <br />
+  * The number of minutes a washing machine was in use <br />
 * Once the user records their corresponding water usage, their percentage of 
 recommended daily water usage will increase. The user will be directed back to 
 the updated front page with a list of water usages. <br />
@@ -40,11 +40,11 @@ gallons of water he or she has used. <br />
 
 ##### Implementation <br />
 * Model <br />
-** Task.swift <br />
+  * Task.swift <br />
 * View <br />
-** Main.storyboard <br />
-** LaunchScreen.storyboard <br />
+  * Main.storyboard <br />
+  * LaunchScreen.storyboard <br />
 * Controller <br />
-** StatsViewController.swift <br />
-** AddTaskViewController.swift <br />
-** TaskTableViewController.swift <br />
+  * StatsViewController.swift <br />
+  * AddTaskViewController.swift <br />
+  * TaskTableViewController.swift <br />
