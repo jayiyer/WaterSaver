@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="j4H-8O-soT">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Add a Use of Water-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="AddTaskViewController" customModule="WaterSaver" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hbz-kc-Ny3">
+                                <rect key="frame" x="0.0" y="176" width="375" height="216"/>
+                                <color key="tintColor" red="0.0" green="1" blue="0.98868757490000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="sZF-Ag-DsB"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="eF2-MZ-JSC"/>
+                                </connections>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="What water category?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="st8-md-6WC">
+                                <rect key="frame" x="93" y="400" width="172" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="* How many minutes/flushes?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bku-Jh-yjV">
+                                <rect key="frame" x="60" y="439" width="228" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="= Total Number of Gallons Used" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NZp-A1-fXV">
+                                <rect key="frame" x="65" y="484" width="229" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Bku-Jh-yjV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1rg-Kn-sD2"/>
+                            <constraint firstItem="Bku-Jh-yjV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BO1-Xh-Cdz"/>
+                            <constraint firstItem="NZp-A1-fXV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DD0-Pf-Rdm"/>
+                            <constraint firstItem="Hbz-kc-Ny3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Nqx-Ga-Yxv"/>
+                            <constraint firstItem="Hbz-kc-Ny3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Pkt-RU-LAZ"/>
+                            <constraint firstItem="Bku-Jh-yjV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TKf-h1-PZS"/>
+                            <constraint firstItem="NZp-A1-fXV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VuT-fU-juO"/>
+                            <constraint firstItem="Bku-Jh-yjV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XMA-rb-DXa"/>
+                            <constraint firstItem="st8-md-6WC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZKf-wX-yNs"/>
+                            <constraint firstItem="st8-md-6WC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eUl-EN-Xh8"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Add a Use of Water" id="9za-xm-nGW">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="XTF-Si-tmQ">
+                            <connections>
+                                <segue destination="cel-c0-tmp" kind="unwind" unwindAction="unwindToList:" id="Bsy-j1-jN1"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="400-Ro-SWz">
+                            <connections>
+                                <segue destination="cel-c0-tmp" kind="unwind" unwindAction="unwindToList:" id="fWC-gC-kQ9"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="saveTask" destination="400-Ro-SWz" id="r2D-GD-q9N"/>
+                        <outlet property="totalNumberGallonsUsedLabel" destination="NZp-A1-fXV" id="P6N-U3-o4R"/>
+                        <outlet property="waterUsageCategoriesPickerView" destination="Hbz-kc-Ny3" id="Fd3-yc-Bs0"/>
+                        <outlet property="waterUsageCategoryLabel" destination="st8-md-6WC" id="zxW-Qf-i00"/>
+                        <outlet property="waterUsageValueLabel" destination="Bku-Jh-yjV" id="olu-qS-Zrz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <exit id="cel-c0-tmp" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1245.5" y="1175.5"/>
+        </scene>
+        <!--Stats View Controller-->
+        <scene sceneID="CB1-1N-wTR">
+            <objects>
+                <viewController id="OJ3-kG-HoA" customClass="StatsViewController" customModule="WaterSaver" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pjp-66-gL4"/>
+                        <viewControllerLayoutGuide type="bottom" id="mWY-0m-lD8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="eyh-SK-QTz">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CmM-fq-OQR">
+                                <rect key="frame" x="166" y="179" width="269" height="97"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="97" id="Bac-kq-L70"/>
+                                    <constraint firstAttribute="width" constant="269" id="gMY-oW-NQR"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="0">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="93" name="AvenirNext-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CHL-5n-R6S">
+                                <rect key="frame" x="166" y="108" width="269" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="269" id="GD5-oB-JHs"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="You have used">
+                                        <attributes>
+                                            <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <font key="NSFont" size="20" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ih-YG-h24">
+                                <rect key="frame" x="166" y="308" width="269" height="88"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="88" id="7cK-da-tuE"/>
+                                    <constraint firstAttribute="width" constant="269" id="Emf-jU-30W"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="gallons of water out of the ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="20" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="recommended ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="20" name="HelveticaNeue-Bold"/>
+                                            <font key="NSOriginalFont" size="20" name="HelveticaNeue-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="9">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="20" name="HelveticaNeue-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="0 gallons per day">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="20" name="HelveticaNeue-Bold"/>
+                                            <font key="NSOriginalFont" size="20" name="HelveticaNeue-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="yQ4-vo-mlA">
+                                <rect key="frame" x="166" y="502" width="269" height="2"/>
+                            </progressView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bmZ-5O-klG">
+                                <rect key="frame" x="166" y="427" width="269" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="269" id="Gza-0d-4Kx"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="You have used">
+                                        <attributes>
+                                            <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <font key="NSFont" size="15" name="HelveticaNeue-Italic"/>
+                                            <font key="NSOriginalFont" size="19" name="HelveticaNeue-Italic"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" 0.00">
+                                        <attributes>
+                                            <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <font key="NSFont" size="15" name="HelveticaNeue-Italic"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="% of your total daily allowed gallons of water">
+                                        <attributes>
+                                            <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <font key="NSFont" size="15" name="HelveticaNeue-Italic"/>
+                                            <font key="NSOriginalFont" size="19" name="HelveticaNeue-Italic"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="mWY-0m-lD8" firstAttribute="top" secondItem="yQ4-vo-mlA" secondAttribute="bottom" constant="52" id="0XY-0S-zwj"/>
+                            <constraint firstItem="yQ4-vo-mlA" firstAttribute="top" secondItem="bmZ-5O-klG" secondAttribute="bottom" constant="23" id="0zw-pO-Bc8"/>
+                            <constraint firstItem="CmM-fq-OQR" firstAttribute="centerY" secondItem="eyh-SK-QTz" secondAttribute="centerY" constant="-72.5" id="3fK-cF-nXn"/>
+                            <constraint firstItem="CHL-5n-R6S" firstAttribute="top" secondItem="pjp-66-gL4" secondAttribute="bottom" constant="44" id="4EB-mU-uT6"/>
+                            <constraint firstItem="1ih-YG-h24" firstAttribute="top" secondItem="CmM-fq-OQR" secondAttribute="bottom" constant="32" id="4zy-W6-D4L"/>
+                            <constraint firstItem="mWY-0m-lD8" firstAttribute="top" secondItem="1ih-YG-h24" secondAttribute="bottom" constant="160" id="Jq4-8D-2oK"/>
+                            <constraint firstItem="CmM-fq-OQR" firstAttribute="centerY" secondItem="eyh-SK-QTz" secondAttribute="centerY" constant="-72.5" id="LiF-up-XIT"/>
+                            <constraint firstItem="bmZ-5O-klG" firstAttribute="centerX" secondItem="yQ4-vo-mlA" secondAttribute="centerX" id="QxJ-RD-7VG"/>
+                            <constraint firstItem="CHL-5n-R6S" firstAttribute="centerX" secondItem="eyh-SK-QTz" secondAttribute="centerX" constant="0.5" id="W0K-2I-JGH"/>
+                            <constraint firstItem="1ih-YG-h24" firstAttribute="centerX" secondItem="eyh-SK-QTz" secondAttribute="centerX" constant="0.5" id="W9t-4A-erm"/>
+                            <constraint firstItem="CmM-fq-OQR" firstAttribute="centerX" secondItem="eyh-SK-QTz" secondAttribute="centerX" id="Xpq-JI-YQL"/>
+                            <constraint firstItem="yQ4-vo-mlA" firstAttribute="leading" secondItem="1ih-YG-h24" secondAttribute="leading" id="e2a-M2-Wk3"/>
+                            <constraint firstItem="CHL-5n-R6S" firstAttribute="centerX" secondItem="CmM-fq-OQR" secondAttribute="centerX" id="ehr-P8-EUn"/>
+                            <constraint firstItem="CmM-fq-OQR" firstAttribute="centerX" secondItem="1ih-YG-h24" secondAttribute="centerX" id="hbn-SJ-rc5"/>
+                            <constraint firstItem="yQ4-vo-mlA" firstAttribute="trailing" secondItem="1ih-YG-h24" secondAttribute="trailing" id="iq9-nw-G7Y"/>
+                            <constraint firstItem="CmM-fq-OQR" firstAttribute="centerX" secondItem="eyh-SK-QTz" secondAttribute="centerX" id="kdx-Be-ETR"/>
+                            <constraint firstItem="CmM-fq-OQR" firstAttribute="centerX" secondItem="eyh-SK-QTz" secondAttribute="centerX" id="lTb-1x-oZ6"/>
+                            <constraint firstItem="CHL-5n-R6S" firstAttribute="centerX" secondItem="eyh-SK-QTz" secondAttribute="centerX" constant="0.5" id="o0h-2c-q0J"/>
+                            <constraint firstItem="CmM-fq-OQR" firstAttribute="centerY" secondItem="eyh-SK-QTz" secondAttribute="centerY" constant="-72.5" id="oBL-M2-njJ"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="9uO-43-I8q">
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="vLX-hB-1jR">
+                            <connections>
+                                <segue destination="fvR-iP-p9s" kind="unwind" identifier="fromStats" unwindAction="unwindToList:" id="4Pd-2N-Evb"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="displayLabel" destination="CmM-fq-OQR" id="zob-94-Wva"/>
+                        <outlet property="progressLabel" destination="bmZ-5O-klG" id="LnK-gf-sUq"/>
+                        <outlet property="progressView" destination="yQ4-vo-mlA" id="6m5-EY-2az"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zKj-js-nCl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="fvR-iP-p9s" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1367" y="479"/>
+        </scene>
+        <!--Your Uses of Water-->
+        <scene sceneID="JIe-mY-Arz">
+            <objects>
+                <tableViewController id="XD1-dK-87b" customClass="TaskTableViewController" customModule="WaterSaver" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="q8u-Hy-v0y">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" reuseIdentifier="TaskCell" textLabel="0P2-37-SBR" style="IBUITableViewCellStyleDefault" id="N0g-IA-aZ7">
+                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="N0g-IA-aZ7" id="ZwH-iz-0bD">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="TEST" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="0P2-37-SBR">
+                                            <rect key="frame" x="15" y="0.0" width="570" height="43"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <sections/>
+                        <connections>
+                            <outlet property="dataSource" destination="XD1-dK-87b" id="nAe-tF-1Vd"/>
+                            <outlet property="delegate" destination="XD1-dK-87b" id="cIi-SJ-fW0"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Your Uses of Water" id="EFd-Uj-Ijj">
+                        <barButtonItem key="leftBarButtonItem" title="Stats" id="vWD-h2-GeD">
+                            <connections>
+                                <segue destination="zl3-1S-wbi" kind="showDetail" identifier="StatsSegue" id="nr8-oL-bm4"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="hFV-Pf-JtU">
+                            <connections>
+                                <segue destination="zBN-y4-6pY" kind="presentation" identifier="Add" id="2fd-uU-rkA"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yPc-vV-kdH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="611" y="1148"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="xRK-EU-B1T">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zBN-y4-6pY" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="8st-A1-IrC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="dUd-QN-lv7"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d2V-qZ-meZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="617" y="1940"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="CCF-SJ-jdS">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="j4H-8O-soT" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="gdn-7a-b5g">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="XD1-dK-87b" kind="relationship" relationship="rootViewController" id="p79-47-bwk"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bq6-hD-6qE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-277" y="1154"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="zl8-0s-BlY">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zl3-1S-wbi" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Rd1-Bp-0Mp">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="OJ3-kG-HoA" kind="relationship" relationship="rootViewController" id="AHK-2g-3fE"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fjt-Uo-x9z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1275" y="-225"/>
+        </scene>
+    </scenes>
+</document>

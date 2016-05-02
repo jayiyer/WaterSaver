@@ -1,50 +1,45 @@
-# ios-decal-proj4
-### **WaterSaver**
+# Project 1: To-Do List App
 
-##### Author <br />
-* Jay Iyer
+## Due
+Tuesday, March 1 at 11:59 PM
 
-##### Purpose <br />
-* WaterSaver helps track people’s daily water usage and conserve water,
-especially during the current California drought.
+## Description 
+In Project 1, you will build your own Utility app - a To-Do List.  As you would
+expect, the app is simple. You are able to view your existing tasks, mark a task
+as completed, delete a task, add a new task, and view stats about how many tasks
+you have completed in 24 hours. As long as your application conforms every one
+of our required criteria (see below), you can add whatever additional features,
+views, UI, etc. you want. 
 
-##### Features <br />
-* Users can record their water usage for many water-intensive tasks <br />
-  * Depending on type of task, determine amount of water used through time of 
-  water usage / a counter / etc. <br />
-* Users can see what percentage of the recommended daily water usage the user 
-has consumed <br />
-* Users can see a progress view of their weekly water usage <br />
-  * Average amount of water used per week <br />
-  * Average percentage of recommended daily water usage <br />
-
-##### Control Flow <br />
-* Users are initially presented with a basically-empty page titled "Your Uses 
-of Water," along with a "Stats" button and a "+" button for adding usage. <br />
-* Once the user taps "+" button button, the user will be presented with many 
-scenarios for recording their water usage <br /> 
-  * The amount of time spent in a bathtub <br />
-  * The number of minutes a dishwasher has been used <br />
-  * The amount of time a faucet has been running <br />
-  * The amount of time a garden hose has been running <br />
-  * The amount of time a shower has been used <br />
-  * The number of minutes a sprinkler was in use <br />
-  * The number of toilet flushes <br />
-  * The number of minutes a washing machine was in use <br />
-* Once the user records their corresponding water usage, their percentage of 
-recommended daily water usage will increase. The user will be directed back to 
-the updated front page with a list of water usages. <br />
-* In another menu, the user can see his or her gallons of water used along with
-a progress view that shows what percentage of his or her total daily allowed 
-gallons of water he or she has used. <br />
-
-##### Implementation <br />
-* Model <br />
-  * Task.swift <br />
-* View <br />
-  * Main.storyboard <br />
-  * LaunchScreen.storyboard <br />
-* Controller <br />
-  * StatsViewController.swift <br />
-  * AddTaskViewController.swift <br />
-  * TaskTableViewController.swift <br />
+## Instructions
+1. Fork the assignment's repository from (https://github.com/iosdecal).
+2. Clone your forked repository to your local machine (the URL should contain
+   YOUR_USERNAME/ios-decal-..).
+3. Add an upstream remote that points to our original repository.
+4. **Create a To-Do List app**
+  * Required
+    * General
+      * Create a Universal app when you construct your Xcode project.
+      * UI must scale to iPhone 6 and up and all iPads in both Portait and
+      Landscape orientations.
+        * Hint: Think Auto-Layout. For UILabels, autoshrink in the Attributes
+        Inspector is also useful. 
+    * To-Do List Table View
+      * Ability to visually mark a task as completed
+      * Tasks must automatically clear 24 hours after they are marked as
+      completed
+      * Ability to delete a task
+      * Button to add a To-Do Item (goes to Add To-Do Item View)
+      * Button to view Stats (goes to Daily Stats View)
+    * Add To-Do Item View
+      * Ability to add a task, where entering text and confirming returns to the
+      To-Do List Table View, now updated with the new task added
+      * Ability to cancel and return to To-Do List Table View without adding a
+      task
+    * Daily Stats View 
+      * Displays the number of tasks completed in the past 24 hours
+      * Ability to return to To-Do List Table View
+  * Optional
+    * Make the data persistent, so that when you close the application and
+    reopen it, your preexisting tasks are restored.
+5. Add, commit, and push your modified file(s) to your forked remote repository.
