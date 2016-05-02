@@ -39,12 +39,12 @@ a progress view that shows what percentage of his or her total daily allowed
 gallons of water he or she has used. <br />
 
 ##### Implementation <br />
-Model <br />
-* Task.swift <br />
-View <br />
-* Main.storyboard <br />
-* LaunchScreen.storyboard <br />
-Controller <br />
-* StatsViewController.swift <br />
-* AddTaskViewController.swift <br />
-* TaskTableViewController.swift <br />
+* Model <br />
+** Task.swift <br />
+* View <br />
+** Main.storyboard <br />
+** LaunchScreen.storyboard <br />
+* Controller <br />
+** StatsViewController.swift <br />
+** AddTaskViewController.swift <br />
+** TaskTableViewController.swift <br />
